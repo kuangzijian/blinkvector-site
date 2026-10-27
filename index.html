@@ -23,14 +23,15 @@
  .js-motion .will-reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
  .js-motion .will-reveal.in-view{opacity:1;transform:none}
  .js-motion .principle:nth-child(2){transition-delay:.1s}.js-motion .principle:nth-child(3){transition-delay:.2s}
- .product-icon{transition:transform .6s cubic-bezier(.2,.7,.2,1)}
- .product-visual:hover .product-icon{transform:rotate(0deg) scale(1.035)}
+ .product-icon{animation:product-sway 7s ease-in-out infinite;transition:filter .3s ease}
+ .product-visual:hover .product-icon{filter:brightness(1.05)}
  .btn .icon,.nav-contact .icon{transition:transform .2s ease}
  .btn:hover .icon,.nav-contact:hover .icon{transform:translate(3px,-2px)}
  @keyframes copy-enter{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
  @keyframes hero-enter{from{opacity:0;transform:translateY(15px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
  @keyframes orbit-float{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-12px) rotate(5deg)}}
- @keyframes logo-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+ @keyframes logo-float{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-10px) rotate(3deg)}}
+ @keyframes product-sway{0%,100%{transform:translateY(0) rotate(-5deg)}50%{transform:translateY(-10px) rotate(3deg)}}
  @keyframes dot-glow{0%,100%{opacity:.6}50%{opacity:1;box-shadow:0 0 24px 7px #778effa0}}
 }
 
